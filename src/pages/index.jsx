@@ -1,6 +1,7 @@
 import { BootcampCard } from "@/component/cards/bootcampCard";
 import { CourseCard } from "@/component/cards/courseCard";
 import { MainLayout } from "@/layout/main";
+import Head from "next/head";
 import Image from "next/image";
 
 import {BsSlack, BsDiscord} from 'react-icons/bs'
@@ -8,6 +9,12 @@ import {BsSlack, BsDiscord} from 'react-icons/bs'
 export default function Home() {
   return (
     <MainLayout>
+      <Head>
+        <title>Neat Academy - Digital platform to Learn Everything</title>
+        <meta name="description" content="Digital platform to learn everything" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/neat_logo.svg" />
+      </Head>
       {/* header */}
       <div className="flex flex-col-reverse md:grid grid-cols-1 lg:grid-cols-2 items-center bg-[#f9f8ff] px-10 lg:px-24 py-20 lg:py-36">
         <section className="space-y-6 mt-36 lg:mt-0">
