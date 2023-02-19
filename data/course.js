@@ -9,7 +9,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 2,
@@ -21,7 +27,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 3,
@@ -33,7 +45,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 4,
@@ -45,7 +63,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 5,
@@ -57,7 +81,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 6,
@@ -69,7 +99,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 7,
@@ -81,7 +117,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 8,
@@ -93,7 +135,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 9,
@@ -105,7 +153,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
     {
         id: 10,
@@ -117,7 +171,13 @@ const Courses = [
         type: 'New Release',
         videoUrl: '',
         description: '',
-        duration: ''
+        mentor : [
+            {
+                name: 'Garry Kra',
+                photo: '',
+                job: 'Product Designer'
+            }
+        ]
     },
 ]
 
