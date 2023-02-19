@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <MainLayout>
       {/* header */}
-      <div className="flex flex-col-reverse md:grid grid-cols-1 lg:grid-cols-2 items-center bg-[#f9f8ff] px-10 lg:px-24 py-20 border-b lg:py-36">
+      <div className="flex flex-col-reverse md:grid grid-cols-1 lg:grid-cols-2 items-center bg-[#f9f8ff] px-10 lg:px-24 py-20 lg:py-36">
         <section className="space-y-6 mt-36 lg:mt-0">
           <div className="gap-y-2">
             <h5 className="text-4xl font-bold mb-3">Advance your career with <br className="hidden sm:block"/> our best courses.</h5>
