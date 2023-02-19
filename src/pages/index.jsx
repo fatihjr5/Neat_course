@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </div>
       {/* Community */}
-      <div className="py-32 w-full bg-no-repeat bg-center object-cover rounded-lg bg-[url('/community.svg')]">
+      <div className="py-32 w-full max-w-7xl mx-auto bg-no-repeat bg-center object-cover rounded-lg bg-[url('/community.svg')]">
         <section className="mb-5 space-y-4 px-10 lg:px-40">
           <h5 className="text-4xl text-white font-bold">We provide open-community to <br className="hidden lg:block" /> connect you with great people</h5>
           <p className="text-lg text-white">Meet 10k+ designers, developers, or another great people <br className="hidden lg:block" /> around the world to sharing with big opportunity for your<br className="hidden lg:block" /> knowledge, career, and many more.</p>
