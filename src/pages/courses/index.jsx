@@ -14,7 +14,7 @@ const Courses = () => {
               <link rel="icon" href="/neat_logo.svg" />
             </Head>
             <section className="flex flex-col gap-y-2 mt-32">
-                <h5 className='text-3xl lg:text-4xl font-bold text-center lg:leading-snug'>Accelerate Your Learning <br /> Journey with Our Classes</h5>
+                <h5 className='text-3xl lg:text-4xl font-bold text-center lg:leading-snug'>Accelerate Your Learnings <br /> Journey with Our Classes</h5>
                 <p className="text-base font-normal text-gray-500 text-center">Choose from our online and in-person learning methods, <br /> both designed to be hands-on and interactive.</p>
             </section>
             <section className="flex flex-row items-center mt-8">
