@@ -3,10 +3,18 @@ import { CourseCard } from "@/component/cards/courseCard";
 import { MainLayout } from "@/layout/main";
 import Head from "next/head";
 import Image from "next/image";
-
+import Courses from "data/course";
 import {BsSlack, BsDiscord} from 'react-icons/bs'
 
-export default function Home() {
+export const getStaticProps = async () => {
+  return {
+    props: {
+      dataCourse: Courses,
+    }
+  }
+}
+
+export default function Home({dataCourse}) {
   return (
     <MainLayout>
       <Head>
@@ -67,14 +75,12 @@ export default function Home() {
           <p className="text-lg font-normal text-gray-500">What you looking are available here</p>
         </section>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <CourseCard/>
-          <CourseCard/>
-          <CourseCard/>
-          <CourseCard/>
-          <CourseCard/>
-          <CourseCard/>
-          <CourseCard/>
-          <CourseCard/>
+          {
+              dataCourse.map((items, i) => (i < 8 &&
+                <CourseCard key={items.id} title={items.course} student={items.student} url={items.course}/>
+              )
+            )
+          }
         </div>
         <div className="text-center">
           <button className="px-4 py-2 rounded-md text-base lg:text-lg font-medium ring-1 ring-[#7000FD] text-[#7000FD] ease-in duration-200">See all Courses</button>
@@ -100,3 +106,4 @@ export default function Home() {
     </MainLayout>
   )
 }
+
