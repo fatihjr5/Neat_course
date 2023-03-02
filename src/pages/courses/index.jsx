@@ -1,10 +1,18 @@
 import { CourseCard } from '@/component/cards/courseCard';
 import { MainLayout } from '@/layout/main';
-import { Input, Select } from 'antd';
+import { Input } from 'antd';
 import Head from 'next/head';
-import React from 'react';
+import Courses from 'data/course';
 
-const Courses = () => {
+export const getStaticProps = async () => {
+    return {
+      props: {
+        dataCourse: Courses,
+      }
+    }
+}
+
+const DetailCourse = ({dataCourse}) => {
     return (
         <MainLayout>
             <Head>
@@ -21,21 +29,14 @@ const Courses = () => {
                 <Input className='w-96 py-2 mx-auto' placeholder="Search courses" />
             </section>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 lg:px-24 gap-6 mt-20">
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
-                <CourseCard/>
+                {
+                    dataCourse.map((items) =>
+                      <CourseCard key={items.id} title={items.course} student={items.student} url={items.course}/>
+                    )
+                }
             </div>
         </MainLayout>
     );
 }
 
-export default Courses;
+export default DetailCourse;

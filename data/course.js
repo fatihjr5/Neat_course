@@ -2,18 +2,18 @@ const Courses = [
     {
         id: 1,
         thumbnail: '',
-        course: 'Build NFT Website',
+        course: 'Build NFT DropDapp',
         category: 'Frontend Development',
-        technology: 'Next JS, TailwindCSS, Sanity',
+        technology: 'Next JS, TailwindCSS, MetaMask, Thirdweb',
         student: '432',
         type: 'New Release',
-        videoUrl: '',
-        description: '',
+        videoUrl: "_siRFuLEgGQ",
+        description: 'Building an NFT DropDapp website using Next.js, TailwindCSS, MetaMask, and Thirdweb involves creating a decentralized application that allows  creators and artists to create and sell NFTs on the blockchain.',
         mentor : [
             {
-                name: 'Garry Kra',
+                name: 'Sonny sangha',
                 photo: '',
-                job: 'Product Designer'
+                job: 'Frontend Developer'
             }
         ]
     },

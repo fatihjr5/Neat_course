@@ -1,16 +1,16 @@
+import React from 'react'
 import { Inter } from '@next/font/google'
-import { MainNavbar } from '@/component/navbar'
+
 import { Footer } from '@/component/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const MainLayout = ({children}) => {
+export const CourseLayout = ({children}) => {
   return (
     <div className={inter.className}>
-        <MainNavbar/>
-          <section>
+        <section>
             {children}
-          </section>
+        </section>
         <Footer/>
     </div>
   )
