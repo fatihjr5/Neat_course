@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { Drawer } from 'antd'
 
@@ -9,6 +10,7 @@ import { BsArrowLeft } from 'react-icons/bs'
 import { BiArrowBack } from 'react-icons/bi'
 
 export const MainNavbar = () => {
+    const router = useRouter();
     // drawer
     const [open, setOpen] = useState(false);
     const [placement, setPlacement] = useState('top');
@@ -25,10 +27,10 @@ export const MainNavbar = () => {
                 <Image src="/neat_logo.svg" alt='Neat' className='w-8' width={100} height={100}/>
             </Link>
             <section className='flex flex-row items-center gap-x-4 lg:ml-12'>
-                    <Link href="/courses" className='text-sm text-gray-400 hover:text-[#7000FD] hover:font-semibold duration-150 ease-in'>Online Courses</Link>
-                    <Link href="/" className='text-sm text-gray-400 hover:text-[#7000FD] hover:font-semibold duration-150 ease-in'>Bootcamps</Link>
-                    <Link href="/" className='text-sm text-gray-400 hover:text-[#7000FD] hover:font-semibold duration-150 ease-in'>Resources</Link>
-                    <Link href="/" className='text-sm text-gray-400 hover:text-[#7000FD] hover:font-semibold duration-150 ease-in'>Careers</Link>
+              <Link href="/courses" className={`text-base ${router.pathname === '/courses' ? 'font-medium text-[#7000FD]' : 'text-gray-500'} hover:text-[#7000FD] hover:font-semibold duration-150 ease-in`}>Online Courses</Link>
+              <Link href="/" className={`text-base ${router.pathname === '/' ? 'font-medium text-[#7000FD]' : 'text-gray-500'} hover:text-[#7000FD] hover:font-semibold duration-150 ease-in`}>Bootcamps</Link>
+              <Link href="/" className={`text-base ${router.pathname === '/' ? 'font-medium text-[#7000FD]' : 'text-gray-500'} hover:text-[#7000FD] hover:font-semibold duration-150 ease-in`}>Resources</Link>
+              <Link href="/" className={`text-base ${router.pathname === '/' ? 'font-medium text-[#7000FD]' : 'text-gray-500'} hover:text-[#7000FD] hover:font-semibold duration-150 ease-in`}>Careers</Link>
             </section>
             <section>
                 <button className="px-4 py-2 rounded-md ring-1 ring-[#7000FD] text-sm font-medium text-[#7000FD] hover:bg-[#7000FD] hover:text-white ease-in duration-200">
@@ -46,10 +48,10 @@ export const MainNavbar = () => {
             <Drawer placement={placement} closable={false} onClose={onClose} open={open} key={placement}>
               <p className="text-sm font-semibold text-gray-400 border-b border-gray-100 pb-4">Menu</p>
               <section className='flex flex-col items-start gap-y-1 mt-4'>
-                <Link href="/courses" className='text-base text-gray-500 hover:text-[#7000FD] hover:font-semibold duration-150 ease-in'>Online Courses</Link>
-                <Link href="/" className='text-base text-gray-500 hover:text-[#7000FD] hover:font-semibold duration-150 ease-in'>Bootcamps</Link>
-                <Link href="/" className='text-base text-gray-500 hover:text-[#7000FD] hover:font-semibold duration-150 ease-in'>Resources</Link>
-                <Link href="/" className='text-base text-gray-500 hover:text-[#7000FD] hover:font-semibold duration-150 ease-in'>Careers</Link>
+                <Link href="/courses" className={`text-base ${router.pathname === '/courses' ? 'font-medium text-[#7000FD]' : 'text-gray-500'} hover:text-[#7000FD] hover:font-semibold duration-150 ease-in`}>Online Courses</Link>
+                <Link href="/" className={`text-base ${router.pathname === '/' ? 'font-medium text-[#7000FD]' : 'text-gray-500'} hover:text-[#7000FD] hover:font-semibold duration-150 ease-in`}>Bootcamps</Link>
+                <Link href="/" className={`text-base ${router.pathname === '/' ? 'font-medium text-[#7000FD]' : 'text-gray-500'} hover:text-[#7000FD] hover:font-semibold duration-150 ease-in`}>Resources</Link>
+                <Link href="/" className={`text-base ${router.pathname === '/' ? 'font-medium text-[#7000FD]' : 'text-gray-500'} hover:text-[#7000FD] hover:font-semibold duration-150 ease-in`}>Careers</Link>
               </section>
               <div className="mt-32">
                 <button className="w-full py-2 rounded-md ring-1 ring-[#7000FD] text-sm font-medium text-[#7000FD] hover:bg-[#7000FD] hover:text-white ease-in duration-200">
